@@ -2,7 +2,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <meta content="text/html" http-equiv="content-type">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<title>Dogecoin Wow App</title>
+<title>Dogecoin Wow App - Home</title>
 <style type="text/css">
   DIV.ETHannouncement {text-align: center }
   </style>
@@ -99,8 +99,8 @@ input[type=number]{
 </STYLE>
   
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-</head><body>
+</head>
+<body>
 <big>
 <br>
 <center>
@@ -117,17 +117,9 @@ input[type=number]{
 <input type="number" onkeyup="BTCconvert()" value="" name="BTC" size="12"> DOGE<small></small></td>
 </tr>
 <tr>
-<td>
-<input type="number" onkeyup="mBTCconvert()" value="" name="mBTC" width="12"> mDOGE - <small>milliDOGE</small></td>
-</tr>
-<tr>
-<td>
-<input type="number" onkeyup="uBTCconvert()" value="" name="uBTC" size="12"> &#956;DOBE - <small>microDOGE</small></td>
-</tr>
-<tr>
-<td>
-<input type="number" onkeyup="satoshiconvert()" value="" name="satoshi" size="12"> DOGEtoshi - <small>nanoDOGE</small></td>
-</tr>
+
+
+
 <tr>
 <td><input type="number" onkeyup="LiveConvert()" value="$" name="LiveConvert" size="12"> &#8776; USD <small>at pageload</small></td>
 </tr>
@@ -136,7 +128,7 @@ input[type=number]{
 <p align="left">
 
 <small><small>
-DOGE &#8594; USD conversion | <a href="FiatToDOGE/USDtoDOGE.htm">USD &#8594; DOGE conversion</a><br>
+DOGE &#8594; USD conversion | <a href="USDtoDOGE.html">USD &#8594; DOGE conversion</a><br>
 Approximate value of one DOGE at time of pageload (in USD):</small></small>
 <center>
 <big>
@@ -167,36 +159,11 @@ Visit http://javascriptkit.com
 */
 function BTCconvert(){
 with (document.BTCunitconverter){
-mBTC.value = (BTC.value*1000);
-uBTC.value = (BTC.value*1000000);
-satoshi.value = (BTC.value*100000000);
 LiveConvert.value = (BTC.value*CurrentPrice.innerHTML);
 }
 }
-function mBTCconvert(){
-with (document.BTCunitconverter){
-BTC.value = (mBTC.value/1000);
-uBTC.value = (mBTC.value*1000);
-satoshi.value = (mBTC.value*100000);
-LiveConvert.value = (mBTC.value*CurrentPrice.innerHTML/1000);
-}
-}
-function uBTCconvert(){
-with (document.BTCunitconverter){
-BTC.value = (uBTC.value/1000000);
-mBTC.value = (uBTC.value/1000);
-satoshi.value = (uBTC.value*100);
-LiveConvert.value = (uBTC.value*CurrentPrice.innerHTML/1000000);
-}
-}
-function satoshiconvert(){
-with (document.BTCunitconverter){
-BTC.value = (satoshi.value/100000000);
-mBTC.value = (satoshi.value/100000);
-uBTC.value = (satoshi.value/100);
-LiveConvert.value = (satoshi.value*CurrentPrice.innerHTML/100000000);
-}
-}
+
+
 function LiveConvert(){
 with (document.BTCunitconverter){
 LiveConvert.value = (CurrentPrice.innerHTML);
@@ -213,10 +180,10 @@ width="80" height="" border="0" /></a></center>
 </p>
 
 <small><small>
-<a href="about.htm">About</a> | <a href="http://br549.mywebcommunity.org/dogecoinwowapp/dev_notes.html">Developer Notes</a> | <a href="privacy.htm">Privacy Policy</a> | Exchange rates powered by <a href="https://www.coingecko.com/en/api" target="_blank">CoinGecko</a><br>
+<a href="about.html">About</a> | <a href="http://br549.mywebcommunity.org/dogecoinwowapp/dev_notes.html">Developer Notes</a> | <a href="privacy.htm">Privacy Policy</a> | Exchange rates powered by <a href="https://www.coingecko.com/en/api" target="_blank">CoinGecko</a><br>
 </small></small>
 <p>
-  <center><img src="dogecoinwowapp.png" border="0" width=40></center>
+  <center><img src="dogecoinwowapp.png" border="0" width=80></center>
 
 <!-- Default Statcounter code for Dogecoin Wow App converter
 
