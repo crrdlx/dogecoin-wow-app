@@ -1,0 +1,339 @@
+<html><head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <meta content="text/html" http-equiv="content-type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Magic 8-Doge - Dogecoin Wow App</title>
+    <style type="text/css">
+      DIV.ETHannouncement {text-align: center }
+      </style>
+    
+    <link rel="icon" 
+          type="image/ico" 
+          href="http://br549.mywebcommunity.org/BAD/favicon.ico">
+          
+      <STYLE>
+    html {
+      font-size: medium;
+    }
+    body {
+      background-color: #ffffff;
+      color: #330;
+      font-family: comic sans ms, verdana, georgia, times, serif;
+      margin: ;
+      max-width: 80em;
+      padding: 0 1em;
+      width: auto;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    a {
+      color: #1e6b8c;
+      font-size: 1em;
+      text-decoration: none;
+      transition-delay: 0.1s;
+      transition-duration: 0.3s;
+      transition-property: color, background-color;
+      transition-timing-function: linear;
+    }
+    a:visited {
+      color: #6f32ad;
+      font-size: 1em;
+    }
+    a:hover {
+      background: #b6cff9;
+      font-size: 1em;
+      text-decoration: underline;
+    }
+    a:active {
+      background-color: #427fed;
+      color: #fffff6;
+      color: white;
+      font-size: 1em;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #black;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 1em;
+      margin-top: 2em;
+    }
+    h1 {
+      font-size: 2.2em;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.8em;
+      border-bottom: solid 0.1rem #703820;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    h4 {
+      font-size: 1.3em;
+      text-decoration: underline;
+    }
+    h5 {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+    h6 {
+      font-size: 1.1em;
+      margin-bottom: 0.5rem;
+    }
+    pre,
+    code,
+    xmp {
+      font-family: courier;
+      font-size: 1rem;
+      line-height: 1.4;
+      white-space: pre-wrap;
+    }
+    </STYLE>
+      
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "7d6eba2f-9efd-4a32-baf6-a5255dd85886", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    
+    <STYLE>
+    <!--
+    A{text-decoration:none}
+    -->
+    </STYLE>
+
+
+
+
+
+
+    <script type="text/javascript">
+    // we define answers
+    var answers = ["It is certain", 
+                   "It is decidedly so", 
+                   "Without a doubt", 
+                   "Yes - definitely",
+                   "You may rely on it", 
+                   "As I see it, yes", 
+                   "Most likely", 
+                   "Outlook good", 
+                   "Yes", "Signs point to yes",
+                   "Don't count on it", 
+                   "My reply is no",
+                   "My sources say no", 
+                   "Outlook not so good",
+                   "Very doubtful", 
+                   "Reply hazy, try again", 
+                   "Ask again later", 
+                   "Better not tell you now",
+                   "Cannot predict now", 
+                   "Concentrate and ask again"];
+    
+    window.onload = function() {
+       var eight = document.getElementById("eight");
+       var answer = document.getElementById("answer");
+       var eightball = document.getElementById("eight-ball");
+       var question = document.getElementById("question");
+       
+       eightball.addEventListener("click", function() {
+         if (question.value.length < 1) {
+           alert('Enter a question!');
+         } else {
+           eight.innerText = "";
+           var num = Math.floor(Math.random() * Math.floor(answers.length));
+           answer.innerText = answers[num];
+         }
+       });
+    };
+  </script>
+  
+  <style type="text/css">
+    h1 { font-weight: 100; font-size: 2.5em;}
+    
+    #content { 
+     width: 600px; 
+     margin: 0 auto; 
+     margin-top: 50px; 
+     border: 1px dotted black;
+     text-align: center; 
+     font-family: 'Helvetica Neue', arial; 
+     font-weight: 100;
+   }
+    
+    div.eight-ball {
+      background-color: black;
+      border: 1px solid black;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    
+    div.answer {
+      background-color: #333;
+      border: 1px solid #333;
+      border-radius: 50%;
+      width: 50%;
+      height: 50%;
+      margin: 25% auto;
+    }
+    
+    p#eight {
+      font-size: 5em;
+      margin: 20% auto;
+      color: white;
+    }
+    
+    p#answer {
+      padding: 23px;
+      color: lightblue;
+      letter-spacing: 2px;
+      font-size:18px;
+    }
+    
+    #question {
+      margin: 20px;
+      padding: 10px;
+      width: 400px;
+      font-size:22px;
+    }
+    
+    #info {
+      font-size: 22px;
+    }
+    
+  </style>
+
+
+
+
+
+
+
+
+    <style type="text/css">
+    h1 { font-weight: 100; font-size: 2.5em;}
+    
+    #content { 
+     width: 600px; 
+     margin: 0 auto; 
+     margin-top: 50px; 
+     border: 1px dotted black;       
+     text-align: center; 
+     font-family: 'Helvetica Neue', arial; 
+     font-weight: 100;
+   }
+    
+    div.eight-ball {
+      background-color: black;
+      border: 1px solid black;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    
+    div.answer {
+      background-color: #333;
+      border: 1px solid #333;
+      border-radius: 50%;
+      width: 50%;
+      height: 50%;
+      margin: 25% auto;
+    }
+    
+    p#eight {
+      font-size: 5em;
+      margin: 20% auto;
+      color: white;
+    }
+    
+    p#answer {
+      padding: 23px;
+      color: lightblue;
+      letter-spacing: 2px;
+      font-size:18px;
+    }
+    
+    #question {
+      margin: 20px;
+      padding: 10px;
+      width: 400px;
+      font-size:22px;
+    }
+    
+    #info {
+      font-size: 22px;
+    }
+    
+  </style>
+
+
+
+
+    
+    </head>
+    <body>
+    <big>
+    <br>
+    <center>
+    <div class="w3-container">
+      <a href="../index.html" class="w3-button w3-round-large w3-khaki"> Dogecoin Wow App </a>
+    </div>
+    </center>
+    </big>
+
+
+
+<div id="content">
+    <h1>Magic 8-Doge</h1>
+    <p id="info">Enter a yes/no question. The wise ZamDogeMir will answer.</p>
+    <p>Tap the 8-ball.</p>
+    <input type="text" id="question" />
+    <div id="eight-ball" class="eight-ball">
+      <div class="answer">
+        <p id="eight">8</p>
+        <p id="answer"></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<small>
+<p>Credit: <a href="https://medium.com/swlh/creating-a-magic-8-ball-in-html5-with-javascript-40df2a0c6efb">8-ball script</a></p>
+</small>
+<center>
+  <a href="../index.html"><img src="../images/dogecoinwowapp.png" border="0" width=60></a>
+</center>
+    
+    <!-- Default Statcounter code for Dogecoin Wow App
+    http://br549.mywebcommunity.org/dogecoinwowapp -->
+    <script type="text/javascript">
+    var sc_project=12193369; 
+    var sc_invisible=1; 
+    var sc_security="5fe36182"; 
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="hit counter"
+    href="https://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="https://c.statcounter.com/12193369/0/5fe36182/1/"
+    alt="hit counter"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+    
+    </body>
+    </html>
+    
